@@ -1,21 +1,26 @@
-h1, p {
-  font-family: Lato;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .slider-container {
   display: flex;
-  height: 90vh;
+  height: 60vh;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .slider-container .item {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   display: flex;
   flex-grow: 1;
-  background-position: 50% 50%;
-  margin: 0 5px;
+  justify-content: center;
+  align-items: center;
   width: 10%;
-  transition: width 1.2s ease-in-out;
+  margin: 0 5px;
+  transition: width 1s ease-in-out;
 }
 
 .slider-container .item.active {
@@ -28,4 +33,12 @@ h1, p {
 
 .slider-container .item:last-child {
   margin-right: 0;
+}
+
+.slider-container .item .title-container {
+  display: none;
+}
+
+.slider-container .item.active .title-container {
+  display: flex;
 }

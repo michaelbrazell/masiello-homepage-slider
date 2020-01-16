@@ -56,15 +56,13 @@ class App extends Component {
   }
 
   onHover(id) {
-    console.log('Hovering...', id)
-    var tempItems = [...this.state.items];
+    let tempItems = [...this.state.items];
     tempItems[id].active = true;
     this.setState({tempItems});
   }
 
   onExit(id) {
-    console.log('Exit', id)
-    var tempItems = [...this.state.items];
+    let tempItems = [...this.state.items];
     tempItems[id].active = false;
     this.setState({tempItems});
   }
@@ -78,11 +76,14 @@ class App extends Component {
           }
           return (
             <div 
+              key={item.id}
               className={this.styleActiveItem(item.active)}
               onMouseOver={this.onHover.bind(this, item.id)}
               onMouseOut={this.onExit.bind(this, item.id)}
               style={itemStyle}>
-              <h2>{item.label}</h2>
+              <div className="title-container">
+                <h2>{item.label}</h2>
+              </div>
             </div>
           )
         })}

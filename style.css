@@ -1,0 +1,31 @@
+h1, p {
+  font-family: Lato;
+}
+
+.slider-container {
+  display: flex;
+  height: 90vh;
+}
+
+.slider-container .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-grow: 1;
+  background-position: 50% 50%;
+  margin: 0 5px;
+  width: 10%;
+  transition: width 1.2s ease-in-out;
+}
+
+.slider-container .item.active {
+  width: 60%;
+}
+
+.slider-container .item:first-child {
+  margin-left: 0;
+}
+
+.slider-container .item:last-child {
+  margin-right: 0;
+}

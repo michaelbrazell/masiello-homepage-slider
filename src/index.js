@@ -17,35 +17,35 @@ class App extends Component {
           "id":0,
           "label":"Commercial",
           "imageUrl":"https://masielloarchitect.com/wp-content/uploads/MG_5737-Edit-1.jpg",
-          "urlPath":"https://masielloarchitect.com/",
+          "urlPath":"https://masielloarchitect.com/design-work/commercial/",
           "active":false
         },
         {
           "id":1,
           "label":"Educational / Institutional",
           "imageUrl":"https://masielloarchitect.com/wp-content/uploads/holy-cross-contemplative-center-hero-1.jpg",
-          "urlPath":"https://masielloarchitect.com/",
+          "urlPath":"https://masielloarchitect.com/design-work/educational-institutional/",
           "active":false
         },
         {
           "id":2,
           "label":"Residential",
           "imageUrl":"https://masielloarchitect.com/wp-content/uploads/20190725_Stonewall-House.jpg",
-          "urlPath":"https://masielloarchitect.com/",
-          "active":true
+          "urlPath":"https://masielloarchitect.com/design-work/residential/",
+          "active":false
         },
         {
           "id":3,
           "label":"Historical",
           "imageUrl":"https://masielloarchitect.com/wp-content/uploads/Render1.jpg",
-          "urlPath":"https://masielloarchitect.com/",
+          "urlPath":"https://masielloarchitect.com/design-work/recreational-hospitality/",
           "active":false
         },
         {
           "id":4,
           "label":"Assistive",
           "imageUrl":"https://masielloarchitect.com/wp-content/uploads/DSC_0220.jpg",
-          "urlPath":"https://masielloarchitect.com/",
+          "urlPath":"https://masielloarchitect.com/design-work/other-work/",
           "active":false
         }
       ]
@@ -100,4 +100,4 @@ class App extends Component {
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById('homepage-slider'));

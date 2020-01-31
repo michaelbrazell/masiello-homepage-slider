@@ -60,6 +60,8 @@
   color: #fff;
   padding-bottom: 0;
   visibility: hidden;
+  font-size: 27px;
+  font-weight: 700;
 }
 
 .slider-container .item.active .title-container h2 {
